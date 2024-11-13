@@ -64,14 +64,88 @@ button:hover {
 }
 
 /* About Me Section Background Color */
+/* Container and Background Styling */
 #about {
-    background-color: #D0A2F7; /* Soft gray or previous section matching color */
-    color: black;
+    padding: 4rem 0;
+    background: linear-gradient(to right, #eeeef3, #05DFD7); /* Indigo to Blue Gradient */
+    color: #5b7dac; /* Text color */
+    text-align: center;
 }
 
-#about.dark{
-    background-color: #030637;
-    color: aliceblue;
+/* Heading Styling */
+#about h2,
+#about h1 {
+    color: #1a181b; /* Darker color for headings */
+    font-weight: bold;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#about h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Paragraph Styling */
+#about p {
+    max-width: 40rem;
+    margin: 0 auto 3rem auto;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: justify;
+}
+
+/* Flex Container for Image and Cards */
+#about .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* Profile Image Styling */
+#about .profile-image {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    object-fit: cover; /* Make sure image covers area */
+    border: 2px solid #f3f4f6; /* Light border */
+}
+
+/* Card Styling */
+#about .card {
+    background-color: #4ade80; /* Light green background for cards */
+    color: #ff0ae200; /* Dark text color */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 1.5rem;
+    min-width: 15rem;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effects for Cards */
+#about .card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading in Cards */
+#about .card h3 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Text inside Cards */
+#about .card p {
+    margin-bottom: 1.5rem;
+    color: #1f2937; /* Slightly darker color for text */
 }
 
 /* Text Colors */
@@ -115,7 +189,7 @@ body.dark{
 
 /* Education Section Background Color */
 #education {
-    background-color: #f3f4f6; /* Same as About Me section or adjust to your preference */
+    background: linear-gradient(to right, #eeeef3, #05DFD7); /* Indigo to Blue Gradient */
 }
 
 /* Image and Box Styling */
@@ -148,12 +222,12 @@ body.dark{
 }
 
 #education {
-    background: linear-gradient(to bottom right, #f3f4f6, #e0e7ff); /* Light gray to soft blue gradient */
+    background: linear-gradient(to right, #eeeef3, #fdfffc); /* Indigo to Blue Gradient */
 }
 
 form input,
 form textarea {
-    background-color: #f9f9f9;
+    background: linear-gradient(to right, #D2FAFB, #C47AFF); /* Indigo to Blue Gradient */
     border-radius: 0.5rem;
     padding: 1rem;
     font-size: 1rem;
@@ -177,3 +251,35 @@ form button:hover {
     background-color: #553c9a;
 }
 
+/* Outer box with shadow */
+.outer-box {
+    background-color: #f8f9fa; /* Light background for outer box */
+    padding: 15px; /* Padding around the inner box */
+    border-radius: 15px; /* Rounded corners for the outer box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Outer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Inner box styling */
+.inner-box {
+    background-color: #ffffff; /* White background for inner box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow */
+    text-align: center;
+}
+
+/* Heading style */
+.skill-heading {
+    font-size: 1.5em;
+    color: #4a5568; /* Darker gray for headings */
+    margin-bottom: 10px;
+}
+
+/* Hover effect for outer box */
+.outer-box:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
