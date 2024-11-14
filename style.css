@@ -69,7 +69,16 @@ button:hover {
     padding: 4rem 0;
     background: linear-gradient(to right, #eeeef3, #05DFD7); /* Indigo to Blue Gradient */
     color: #5b7dac; /* Text color */
-    text-align: center;
+    text-align: left; /* Align text to the left */
+}
+
+#about h1, #about h2 {
+    text-align: center; /* Center alignment for titles */
+}
+
+#about p {
+    text-align: justify; /* Justify paragraph text */
+    padding-right: 1.5rem; /* Add padding to the right */
 }
 
 /* Heading Styling */
@@ -157,19 +166,6 @@ p {
     color: #607274; /* Subtle gray for body text */
 }
 
-/* Rectangle Shape for Profile Picture */
-.w-60 {
-    width: 15rem; /* Width for rectangular shape */
-}
-
-.h-80 {
-    height: 20rem; /* Height for rectangular shape */
-}
-
-/* Image and Box Styling */
-.shadow-lg {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
-}
 
 .border-4 {
     border-width: 4px; /* Profile image border width */
@@ -222,7 +218,7 @@ body.dark{
 }
 
 #education {
-    background: linear-gradient(to right, #eeeef3, #fdfffc); /* Indigo to Blue Gradient */
+    background: linear-gradient(to right, #eeeef3, #D2FAFB); /* Indigo to Blue Gradient */
 }
 
 form input,
@@ -252,14 +248,42 @@ form button:hover {
 }
 
 /* Outer box with shadow */
+/* Container to center and provide spacing between skill cards */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Outer box styling */
+/* Skills container for layout adjustments */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Outer box styling with initial color */
+/* Container settings */
+/* Outer box styling */
+/* Section styling */
+#skills {
+    padding: 4rem 0;
+    background: linear-gradient(to right, #ffffff, #ffaebc);
+    color: #1f2937;
+}
+
+/* Outer box styling */
 .outer-box {
-    background-color: #f8f9fa; /* Light background for outer box */
-    padding: 15px; /* Padding around the inner box */
-    border-radius: 15px; /* Rounded corners for the outer box */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Outer shadow */
+    background-color: #D4F6FF; /* Light color for outer box */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-block;
-    margin: 10px;
+    margin: 15px;
 }
 
 /* Inner box styling */
@@ -267,19 +291,30 @@ form button:hover {
     background-color: #ffffff; /* White background for inner box */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for inner box */
+.hover-effect:hover {
+    background-color: #4a90e2; /* Blue color for inner box on hover */
+    color: #ffffff; /* Text color for hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 /* Heading style */
 .skill-heading {
     font-size: 1.5em;
-    color: #4a5568; /* Darker gray for headings */
+    color: #4a5568;
     margin-bottom: 10px;
 }
 
-/* Hover effect for outer box */
-.outer-box:hover {
-    transform: translateY(-5px); /* Lift effect */
+/* Optional: Additional hover effect for outer box */
+.outer-box:hover .inner-box {
+    background-color: #c4fff9; /* Inner box color on outer box hover */
+    color: #ffffff; /* White text on inner box hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
+
+
