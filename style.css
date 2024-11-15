@@ -249,33 +249,21 @@ form button:hover {
 
 /* Outer box with shadow */
 /* Container to center and provide spacing between skill cards */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
 
-/* Outer box styling */
-/* Skills container for layout adjustments */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
 
 /* Outer box styling with initial color */
 /* Container settings */
 /* Outer box styling */
 /* Section styling */
+/* Outer box styling */
+/* Skills Section Styling */
 #skills {
     padding: 4rem 0;
-    background: linear-gradient(to right, #ffffff, #ffaebc);
-    color: #1f2937;
+    background: linear-gradient(to right, #D4F6FF, #C4FFF9); /* Update these colors */
+    color: #333333; /* Adjust text color for contrast if needed */
 }
 
-/* Outer box styling */
+
 .outer-box {
     background-color: #D4F6FF; /* Light color for outer box */
     padding: 20px;
@@ -293,14 +281,15 @@ form button:hover {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover effect for inner box */
 .hover-effect:hover {
-    background-color: #4a90e2; /* Blue color for inner box on hover */
-    color: #ffffff; /* Text color for hover */
+    background-color: #d485e5; /* Blue color for inner box on hover */
+    color: #ffffff; /* White text color on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: scale(1.05); /* Scale up the inner box on hover */
 }
 
 /* Heading style */
@@ -310,11 +299,11 @@ form button:hover {
     margin-bottom: 10px;
 }
 
-/* Optional: Additional hover effect for outer box */
-.outer-box:hover .inner-box {
-    background-color: #c4fff9; /* Inner box color on outer box hover */
-    color: #ffffff; /* White text on inner box hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+/* Hover effect for outer box */
+.outer-box:hover {
+    background-color: #c0ea57; /* Outer box color on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on outer box hover */
 }
+
 
 
