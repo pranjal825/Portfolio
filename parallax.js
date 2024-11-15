@@ -8,4 +8,4 @@ window.addEventListener('scroll', function() {
       el.style.transform = `translateY(${yPos}px)`;
     });
   });
-  
+   const myimage=""
