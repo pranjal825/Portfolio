@@ -21,11 +21,6 @@
         <div class="flex items-center">
     <a href="#about" class="text-2xl font-bold text-gray-800">Pranjal Dwivedi</a>
 </div>
- <!-- Dark Mode Toggle -->
-        <button id="darkToggle" class="text-2xl bg-gray-300 p-2 rounded-full dark:bg-yellow-400">
-            🌙
-        </button>
-       </div>
         <ul class="hidden md:flex items-center gap-5 lg:gap-7 rounded-full px-11 py-3 bg-green-300 shadow-sm bg-opacity-55">
             <li><a href="#home" class="hover:text-red-500">Home</a></li>
             <li><a href="#education" class="hover:text-red-500">Education</a></li>
@@ -33,6 +28,11 @@
             <li><a href="#projects" class="hover:text-red-500">Projects</a></li>
             <li><a href="#contact" class="hover:text-red-500">Contact Me</a></li>
         </ul>
+        <!-- Dark Mode Toggle -->
+             <div class="flex items-center gap-3">
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      <button id="darkToggle" class="text-2xl bg-gray-300 p-2 rounded-full dark:bg-yellow-400">🌙</button>
+    </div>
         <!-- Mobile Navigation Menu -->
         <ul id="sideMenu" class="hidden md:hidden flex-col py-20 px-10 fixed right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-200 transition duration-500">
             <li><a href="#home" class="hover:text-blue-500">Home</a></li>
@@ -107,21 +107,31 @@
 
  <!-- Skills Section -->
   <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-gradient-to-r from-white animate-fade-up">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-6">Projects</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="outer-box p-6 shadow-md hover:scale-105 transition">
-          <h3 class="text-xl font-bold mb-2">E-commerce Website</h3>
-          <p>Developed a fully responsive e-commerce website using React, Tailwind & Stripe payment integration.</p>
+ <section id="projects" class="py-20 bg-gradient-to-r from-white animate-fade-up">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-10">Projects</h2>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Project Card 1 -->
+      <a href="https://work-xi-seven.vercel.app/" target="_blank" class="block">
+        <div class="outer-box h-50 w-full bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col justify-between transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+          <h3 class="text-xl font-bold mb-2">Landing Page</h3>
+          <p class="text-gray-600 dark:text-gray-300">Built a modern landing page using Tailwind with responsive design and animation effects.</p>
         </div>
-        <div class="outer-box p-6 shadow-md hover:scale-105 transition">
-          <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
-          <p>This responsive portfolio website to showcase my skills, education & projects using TailwindCSS.</p>
+      </a>
+
+      <!-- Project Card 2 -->
+      <a href="https://myportfolio962.netlify.app/" target="_blank" class="block">
+        <div class="outer-box h-50 w-full bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col justify-between transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+          <h3 class="text-xl font-bold mb-2">Portfolio</h3>
+          <p class="text-gray-600 dark:text-gray-300">Created a developer portfolio using HTML, Tailwind, and animations with smooth scroll.</p>
         </div>
-      </div>
+      </a>
+
     </div>
-  </section>
+  </div>
+</section>
+
       <!-- Contact Section -->
 <section id="contact" class="py-16 text-center bg-gray-50">
     <div class="single-contact-box mx-auto">
