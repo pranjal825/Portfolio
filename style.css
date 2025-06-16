@@ -265,7 +265,7 @@ form button:hover {
 
 
 .outer-box {
-    background-color: #D4F6FF; /* Light color for outer box */
+    background-color: #feffff; /* Light color for outer box */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -301,7 +301,7 @@ form button:hover {
 
 /* Hover effect for outer box */
 .outer-box:hover {
-    background-color: #fcc3c3; /* Outer box color on hover */
+    background-color: #d9ffad; /* Outer box color on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on outer box hover */
 }
 
