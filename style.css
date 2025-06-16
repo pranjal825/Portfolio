@@ -20,7 +20,7 @@ button:hover {
 /* Home Section Styling */
 /* Gradient Button */
 .btn-gradient {
-    background: linear-gradient(135deg, #FFE3E3, #FFE3E3); /* Gradient colors */
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Gradient colors */
     transition: transform 0.3s, background 0.3s;
 }
 .btn-gradient:hover {
@@ -67,7 +67,7 @@ button:hover {
 /* Container and Background Styling */
 #about {
     padding: 4rem 0;
-    background: linear-gradient(to right, #eeeef3, #05DFD7); /* Indigo to Blue Gradient */
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Indigo to Blue Gradient */
     color: #5b7dac; /* Text color */
     text-align: left; /* Align text to the left */
 }
@@ -123,7 +123,7 @@ button:hover {
     border-radius: 0.5rem; /* Rounded corners */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     object-fit: cover; /* Make sure image covers area */
-    border: 2px solid #f3f4f6; /* Light border */
+    border: 2px solid #ffffff; /* Light border */
 }
 
 /* Card Styling */
@@ -180,12 +180,12 @@ p {
 }
 
 body.dark{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
 }
 
 /* Education Section Background Color */
 #education {
-    background: linear-gradient(to right, #eeeef3, #05DFD7); /* Indigo to Blue Gradient */
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Indigo to Blue Gradient */
 }
 
 /* Image and Box Styling */
@@ -206,7 +206,7 @@ body.dark{
 }
 
 .border-gray-200 {
-    border-color: #e5e7eb; /* Light gray border for image */
+    border-color: #ffffff; /* Light gray border for image */
 }
 
 .rounded-lg {
@@ -218,7 +218,7 @@ body.dark{
 }
 
 #education {
-    background: linear-gradient(to right, #eeeef3, #D2FAFB); /* Indigo to Blue Gradient */
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Indigo to Blue Gradient */
 }
 
 form input,
@@ -259,7 +259,7 @@ form button:hover {
 /* Skills Section Styling */
 #skills {
     padding: 4rem 0;
-    background: linear-gradient(to right, #D4F6FF, #C4FFF9); /* Update these colors */
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Update these colors */
     color: #333333; /* Adjust text color for contrast if needed */
 }
 
@@ -301,7 +301,7 @@ form button:hover {
 
 /* Hover effect for outer box */
 .outer-box:hover {
-    background-color: #c0ea57; /* Outer box color on hover */
+    background-color: #fcc3c3; /* Outer box color on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on outer box hover */
 }
 
